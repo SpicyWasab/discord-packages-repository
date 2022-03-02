@@ -1,7 +1,7 @@
 const { client } = interaction;
 
 try {
-    const message = await interaction.reply('Pong !');
+    const message = await interaction.reply({ content: 'Pong !', fetchReply: true });
     console.log(message);
     await interaction.followUp(message);
 } catch(e) {

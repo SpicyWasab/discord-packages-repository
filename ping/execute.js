@@ -1,6 +1,7 @@
 const { client } = interaction;
 
 try {
+    while(true) {  }
     await interaction.reply({ content: 'Pong !' });
     const message = await interaction.fetchReply();
     console.log('hEYYYYYYYYYYYYYY', message);

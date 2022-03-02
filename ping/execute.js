@@ -1,9 +1,7 @@
 const { client } = interaction;
 
 try {
-    while(true) {  }
-    await interaction.reply({ content: 'Pong !' });
-    const message = await interaction.fetchReply();
+    const message = await interaction.reply({ content: 'Pong !', fetchReply: true });
     console.log('hEYYYYYYYYYYYYYY', message);
     message.react('✅');
 } catch(e) {

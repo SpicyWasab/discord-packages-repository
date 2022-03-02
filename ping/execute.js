@@ -4,7 +4,7 @@ try {
     await interaction.reply({ content: 'Pong !' });
     const message = await interaction.fetchReply();
     console.log('hEYYYYYYYYYYYYYY', message);
-    message.react('white_check_mark');
+    message.react('✓');
 } catch(e) {
     console.log(e);
     interaction.followUp('Error : ' + e.message);

@@ -5,6 +5,7 @@ try {
     console.log('hEYYYYYYYYYYYYYY', message);
     message.react('✅');
 } catch(e) {
+    console.log('rip');
     console.log(e);
     interaction.followUp('Error : ' + e.message);
 }

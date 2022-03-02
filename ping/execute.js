@@ -1,7 +1,8 @@
 const { client } = interaction;
 
 try {
-    const message = await interaction.reply({ content: 'Pong !', fetchReply: true });
+    await interaction.reply({ content: 'Pong !' });
+    const message = await interaction.fetchReply();
     console.log('hEYYYYYYYYYYYYYY', message);
     message.react('white_check_mark');
 } catch(e) {

@@ -1,3 +1,5 @@
 const { client } = interaction;
 
-interaction.reply('Pong !');
+const message = await interaction.reply('Pong !');
+
+message.react('thinking');
